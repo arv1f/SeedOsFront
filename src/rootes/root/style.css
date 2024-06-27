@@ -1,0 +1,7 @@
+.root-cont{
+  position: absolute;
+  display: flex;
+  inset: 0;
+  background-color: var(--bg_main);
+  color: var(--fg_main);
+}
