@@ -28,7 +28,7 @@ export const LoginRoot = () => {
   const onSubmit: SubmitHandler<FormData> = (dataSignIn : {name: string, password: string}) => {
     const options = {
       method: "POST",
-      url: `http://localhost:3000/api/login`,
+      url: `http://auth_service:3000/api/login`,
       params: dataSignIn,
       // headers: { accept: "application/json" },
     }

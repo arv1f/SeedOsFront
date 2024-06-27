@@ -35,7 +35,7 @@ export const RegistrationRoot = () => {
 const onSubmit: SubmitHandler<FormData> = (dataSignUp : {name: string, password: string, email: string, inn: string}) => {
   const options = {
     method: "POST",
-    url: `http://localhost:3000/api/register`,
+    url: `http://auth_service:3000/api/register`,
     params: dataSignUp,
     // headers: { accept: "application/json" },
   }
