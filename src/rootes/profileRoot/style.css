@@ -18,8 +18,21 @@
 }
 .input_box input{
   background-color: var(--bg_input);
+  color: var(--fg_main);
   width: 65%;
   height: 1.3rem;
   border-radius: 0.4rem;
   border-color: transparent;
+  padding-left: 0.5rem;
+}
+.edit_profile_link{
+  cursor: pointer;
+  right: 2%;
+  bottom: 5%;
+  position: fixed;
+  font-size: 0.8rem;
+}
+.edit_profile_link a{
+  color: var(--fg_main);
+  text-decoration: underline;
 }

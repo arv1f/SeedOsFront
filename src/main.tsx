@@ -7,6 +7,8 @@ import { RegistrationRoot } from './rootes/registrationRoot';
 import { LoginRoot } from './rootes/logintRoot';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ProfileRoot } from './rootes/profileRoot';
+import { ProfileEditRoot } from './rootes/profileEditRoot';
+import { SettingsRoot } from './rootes/settingsRoot';
 // Связь с сервером REST API: @tanstack/react-query axios;
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -25,6 +27,14 @@ const router = createBrowserRouter([
       {
         path: "/profile",
         element: <ProfileRoot />
+      },
+      {
+        path: "/profileEdit",
+        element: <ProfileEditRoot />
+      },
+      {
+        path: "/settings",
+        element: <SettingsRoot />
       }
     ]
   },
