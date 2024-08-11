@@ -4,13 +4,15 @@ export const RootHeader = () => {
   const myNavigator = useNavigate();
   return (
     <header className="top_panel">
-      <span>Главная</span>
-      <div onClick={() => {alert("В разработке")}}>Датчики</div>
-      <div onClick={() => {alert("В разработке")}}>Управление</div>
+      <button className="visibility_button">.</button>
+      <div onClick={() => {myNavigator("/profile")}}>Профиль</div>
+      <div onClick={() => {alert("В разработке")}}>Поля и теплицы</div>
       <div onClick={() => {alert("В разработке")}}>Орошение</div>
-      <div onClick={() => {alert("В разработке")}}>Статистика</div>
-      <div onClick={() => {alert("В разработке")}}>Заметки</div>
-      <button onClick={() => myNavigator("/registration")}>Войти</button>
+      <div onClick={() => {alert("В разработке")}}>Севооборот</div>
+      <div onClick={() => {alert("В разработке")}}>Датчики</div>
+      <div onClick={() => {alert("В разработке")}}>Настройки</div>
+      <span></span>
+      <div>ru/en</div>
     </header>
   );
 }

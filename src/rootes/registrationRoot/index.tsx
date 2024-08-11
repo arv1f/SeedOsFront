@@ -31,6 +31,15 @@ export const RegistrationRoot = () => {
     inn: "000000000000"
   }
 });
+  // const {refetch} = useQuery<string>({
+  //   queryKey: ["register", options],
+  //   queryFn: async () => {
+  //     const { data } = await axios.request(options)
+  //     setToken(data);
+  //     return data
+  //   },
+  //   refetchOnMount: true,
+  // })
 
 const onSubmit: SubmitHandler<FormData> = (dataSignUp : {name: string, password: string, email: string, inn: string}) => {
   const options = {
@@ -39,14 +48,8 @@ const onSubmit: SubmitHandler<FormData> = (dataSignUp : {name: string, password:
     params: dataSignUp,
     // headers: { accept: "application/json" },
   }
-  const { data, isError, error } = useQuery<string>({
-    queryKey: ["register"],
-    queryFn: () => axios.request(options),
-  })
-  if (isError) alert(error)
-  else setToken(data!)
+  axios.request(options).then((res) => {setToken(res.data)})
 }
-
   return (
     <div className="login_cont light-theme">
       <img src="/public/c6f969edd39d2628eb3e81e9fa761356.jpg"/>

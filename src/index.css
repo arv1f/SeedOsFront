@@ -20,9 +20,9 @@
   --fg_button: hsl(220, 23%, 95%);/*Base*/
   --fg_error: hsl(355, 76%, 59%);/*Maroon*/
   /* bg */
-  --bg_main: hsl(220, 21%, 89%);/*Crust*/
+  --bg_main: hsl(220, 23%, 99%);/*Base, l+4%*/
   --bg_button: hsl(109, 58%, 40%);/*Green*/
-  --bg_input: hsl(220, 22%, 92%);/*Mantle*/
+  --bg_input: hsl(220, 23%, 95%);/*Base*/
   --bg_teal: hsl(183, 74%, 35%);/*Teal*/
   --bg_button_hover: hsl(109, 58%, 42%);/*Green with light +2%*/
 }
